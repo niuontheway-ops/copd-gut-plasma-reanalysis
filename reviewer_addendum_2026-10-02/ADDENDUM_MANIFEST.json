@@ -1,0 +1,48 @@
+{
+  "analysis_recorded_date": "2026-10-02",
+  "release_date": "2026-10-04",
+  "scope": "Fixed post hoc creatinine-relative-signal sensitivity; aggregate-only code and results",
+  "old_snapshot_sha256_unchanged": "20567c57a5240947f76921c3ce3e7baf1e4ffa86e447480ff730b4a37d4144b8",
+  "participant_level_files_included": false,
+  "script_unchanged_from_completed_analysis": true,
+  "original_helper_and_aggregate_result_hashes_match": true,
+  "csv_model_rows": 10,
+  "full_clean_environment_reproduction_tested_for_release": false,
+  "files": [
+    {
+      "path": "analyze_renal_signal_sensitivity.py",
+      "bytes": 8631,
+      "sha256": "6e45e0f33caa436839016a8df6bf759faba31ce5162d39b47eb55bd7397abbc7"
+    },
+    {
+      "path": "RENAL_SIGNAL_SENSITIVITY_PLAN.md",
+      "bytes": 2260,
+      "sha256": "248c94d5fe5fea93816a6880b0d49a43b2a6c1183545a98fbc942f4c5433571b"
+    },
+    {
+      "path": "results/renal_signal_sensitivity_audit.json",
+      "bytes": 3007,
+      "sha256": "109a0282e76a3712dbb6aca2527507baf3b34db6039f8648a07b790385adf5c7"
+    },
+    {
+      "path": "results/supplementary_table_s21_renal_signal_sensitivity.csv",
+      "bytes": 1529,
+      "sha256": "d40f09222cc8c6e43e5886d85affe7eff2d5c945a6de7f62933dc3aaf63593e2"
+    },
+    {
+      "path": "results/supplementary_figure_s5_renal_signal_sensitivity.png",
+      "bytes": 101206,
+      "sha256": "6adfabcb14c636585b66071d80521aefecc7cad39a12026f1160e1f3201f1706"
+    },
+    {
+      "path": "results/supplementary_figure_s5_renal_signal_sensitivity.tiff",
+      "bytes": 219878,
+      "sha256": "46c3f4f24bdf68fbe314239ac8bd6128c7ff9f12e86434a5b78afcac3d82d8f7"
+    },
+    {
+      "path": "results/supplementary_figure_s5_renal_signal_sensitivity.pdf",
+      "bytes": 19667,
+      "sha256": "b35cb69c91111ce72e16e769905a0a79dd9e8463d2d52d07dcdd66682933b7e1"
+    }
+  ]
+}

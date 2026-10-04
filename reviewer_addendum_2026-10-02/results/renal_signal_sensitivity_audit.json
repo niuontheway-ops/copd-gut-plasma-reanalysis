@@ -1,0 +1,81 @@
+{
+  "run_time_utc": "2026-10-01T21:57:38.825592+00:00",
+  "study": "ST001639",
+  "analysis": "post_hoc_creatinine_relative_signal_sensitivity",
+  "plan": "RENAL_SIGNAL_SENSITIVITY_PLAN.md",
+  "matrix_samples": 648,
+  "copd_labelled_samples": 636,
+  "metadata_fields": [
+    "mb_sample_id",
+    "Subject name",
+    "Sample name",
+    "COPD",
+    "Sample_Data:Gender",
+    "Race",
+    "BMI",
+    "Smoking Status"
+  ],
+  "creatinine_signal_positive_samples": 648,
+  "creatinine_units": "uncalibrated relative metabolomics signal, not clinical concentration or eGFR",
+  "baseline_match_targets": [
+    "indolepropionate",
+    "indoleacetate",
+    "indolelactate",
+    "p-cresol sulfate",
+    "hippurate"
+  ],
+  "baseline_match_tolerances": {
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  "same_complete_case_samples_between_specifications": true,
+  "all_designs_full_rank": true,
+  "multiplicity": "BH across 5 candidates separately for each specification; not project-wide error control",
+  "hippurate": [
+    {
+      "metabolite": "hippurate",
+      "specification": "original_covariates",
+      "n_complete": 623,
+      "beta": 0.21994319851243646,
+      "lo": 0.05636207334170279,
+      "hi": 0.38352432368317013,
+      "p": 0.008406990140804108,
+      "q_bh_5_within_specification": 0.04203495070402054
+    },
+    {
+      "metabolite": "hippurate",
+      "specification": "plus_creatinine_relative_signal",
+      "n_complete": 623,
+      "beta": 0.22082534812342614,
+      "lo": 0.06047432528636362,
+      "hi": 0.3811763709604886,
+      "p": 0.006951909450092077,
+      "q_bh_5_within_specification": 0.03475954725046038
+    }
+  ],
+  "hippurate_coefficient_relative_attenuation": -0.004010806503479181,
+  "versions": {
+    "python": "3.12.14",
+    "pandas": "3.0.6",
+    "numpy": "2.5.3",
+    "statsmodels": "0.15.0",
+    "matplotlib": "3.11.2"
+  },
+  "sha256": {
+    "ST001639-AN002681.txt": "4894bd8d2e3896b422b65fd6931b937fba477ef5c0ab297d3b23f10c22eb4689",
+    "ST001639-AN002682.txt": "1b9008a32d5f3ad8b3e2a6b572f8e6282aa76351e92156bfc521c9dca3c8660f",
+    "ST001639-AN002683.txt": "f833f3af8d9cbccae056964669504abd86c30406eb8f36947d52330b88fc7a04",
+    "ST001639-AN002684.txt": "edb3201e93702ae552fda45cace7c5f2415e76e83401769fdfb3d69e9bb60f88",
+    "ST001639-samples.html": "a83d73442b1e712d135fdc63c3ce805a6afcd636acc7070fb0b9037cd8e13f4a",
+    "copd_metabolites_adjusted.csv": "50a7900e27a940383c0ddca2369a36c5e98a8034d75dbbd9428da6e64a1e8a28",
+    "analyze_pilot.py": "dab09ca623463a4d05a35ee681084463bcf71fb7e83dd66069440b525324da4b",
+    "analyze_renal_signal_sensitivity.py": "6e45e0f33caa436839016a8df6bf759faba31ce5162d39b47eb55bd7397abbc7"
+  },
+  "limitations": [
+    "No age or clinical renal function",
+    "Cannot estimate eGFR from relative signal",
+    "No proof of renal cause, no exclusion of renal confounding",
+    "Post hoc analysis; no biomarker validation"
+  ],
+  "participant_level_output": false
+}
