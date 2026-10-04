@@ -1,0 +1,4 @@
+# Preserve exact published bytes for the recorded SHA256 checksums.
+README.md -text
+SHA256SUMS.txt -text
+reviewer_addendum_2026-10-02/** -text
